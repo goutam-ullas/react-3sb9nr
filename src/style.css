@@ -376,7 +376,6 @@ display:inline;
 
 .video {
   position: fixed;
-  transition: width 1s, height 1s, left 1s;
   pointer-events: auto;
 }
 
@@ -387,6 +386,14 @@ display:inline;
   font-family: kazimirtext, sans-serif;
   font-size: 16px;
 }
+
+.themeDesc2{
+  color: black;
+  align-self: "flex-start";
+  font-family: kazimirtext, sans-serif;
+  font-size: 16px;
+}
+
 
 .legendDot {
   height: 10px;

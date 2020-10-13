@@ -130,11 +130,15 @@ class Application extends React.Component {
       "I particularly identify with his naming of the Ganga pressure cooker; my friend’s mother had the same name and we were close friends. My friend, when she got married, also received an entire Ganga cooking range as a wedding gift. I believe, the groom’s family were quite particular about what gifts they wanted. And me, I’ve never taken a meal without bread made from the wheat flour, Annapurna. As best as I can remember, I did not have a friend by this name, though, my grandmother, a devout lady, prayed without end to the goddess, Annapurna.";
     this.theme3Desc4 =
       "Mr. Gupta is a revered Ad Man, and I’d love to have him sit for a talk. This interview, I strongly believe, will put the rest of the plot into perspective.";
-    this.page4Desc = "The other thing is the picture of the child, who remained as a sample on the storekeeper’s phone, a sample of this set and its screenplay. And while recording, I knew that it was precisely at this moment in my narrative sequence that rage and anger should summit. But then again, what is the cost of manufacturing this rage and to what end?";
-    this.page5Desc = "And what of the bride, who reaches her marital home with utensils filled to their brim with grains, evidence of having received good care or upbringing (likely one of those)? Do we see these utensils in the frame? Should we see them? Close-ups, stills or do we see them as they are emptied by those in this home? Utensils filled with grain, gradually emptied. Must we see this to understand the story? ";
-    this.page7Desc = "Also consider that instance of the patriarch, who in his insistence about the relevance of dowry, keeps mentioning the many movies he’s seen. In what had felt like being consumed by sharp moments of hesitations and illusions about beginnings, middles and ends, watching his faith in fiction, there were for me, brief flashes of deep belief. That I could tell a counter story, however disjointed. That eventually, I might find a form, a way to narrate these, connect instances of fear to power and identities to authority.";
-    
-    this.page6Desc = "The question is, why does the muezzin suddenly follow up his recital with a declaration of his love for India? Or was it a plea? A plea far too big, a distance too remote for this neighborhood minaret to broadcast. And I had been looking for a face, a face most depicting of this fear. But for now, I will have to organize and find within this sound those precise points of nostalgia, power and fear."
+    this.page4Desc =
+      "The other thing is the picture of the child, who remained as a sample on the storekeeper’s phone, a sample of this set and its screenplay. And while recording, I knew that it was precisely at this moment in my narrative sequence that rage and anger should summit. But then again, what is the cost of manufacturing this rage and to what end?";
+    this.page5Desc =
+      "And what of the bride, who reaches her marital home with utensils filled to their brim with grains, evidence of having received good care or upbringing (likely one of those)? Do we see these utensils in the frame? Should we see them? Close-ups, stills or do we see them as they are emptied by those in this home? Utensils filled with grain, gradually emptied. Must we see this to understand the story? ";
+    this.page7Desc =
+      "Also consider that instance of the patriarch, who in his insistence about the relevance of dowry, keeps mentioning the many movies he’s seen. In what had felt like being consumed by sharp moments of hesitations and illusions about beginnings, middles and ends, watching his faith in fiction, there were for me, brief flashes of deep belief. That I could tell a counter story, however disjointed. That eventually, I might find a form, a way to narrate these, connect instances of fear to power and identities to authority.";
+
+    this.page6Desc =
+      "The question is, why does the muezzin suddenly follow up his recital with a declaration of his love for India? Or was it a plea? A plea far too big, a distance too remote for this neighborhood minaret to broadcast. And I had been looking for a face, a face most depicting of this fear. But for now, I will have to organize and find within this sound those precise points of nostalgia, power and fear.";
   }
   /* Video URLs*/
   theme0Video = "https://player.vimeo.com/video/467182611";
@@ -145,9 +149,7 @@ class Application extends React.Component {
   theme5Video = "https://vimeo.com/448795035/00689831b4";
   theme6Video = "https://vimeo.com/448630300/810e46cfce";
   theme7Video = "https://vimeo.com/454107513/7c4b053989";
-  
-  
-  
+
   /* Image URLs */
   theme2Img = "https://i.imgur.com/qaEN8qV.png";
 
@@ -506,7 +508,7 @@ class Application extends React.Component {
     }
     if (this.state.aboutState == true) {
       this.setState({
-        aboutWidth: 0.405*this.state.mapWidth
+        aboutWidth: 0.405 * this.state.mapWidth
       });
     } else {
       this.setState({
@@ -567,7 +569,7 @@ class Application extends React.Component {
     }
     if (this.state.researchState == true) {
       this.setState({
-        researchWidth: 0.405*this.state.mapWidth,
+        researchWidth: 0.405 * this.state.mapWidth,
         researchBorder: 50
       });
     } else {
@@ -608,7 +610,11 @@ class Application extends React.Component {
       });
     }
     if (this.circleState == 2) {
-      this.setState({ page3Vis: "visible", page2Vis: "hidden", page1Vis: "hidden", page1Play:false });
+      this.setState({
+        page3Vis: "visible",
+        page2Vis: "hidden",
+        page1Vis: "hidden"
+      });
     }
     if (this.circleState == 3) {
       this.setState({ page4Vis: "visible", page3Vis: "hidden" });
@@ -622,7 +628,7 @@ class Application extends React.Component {
     if (this.circleState == 6) {
       this.setState({ page7Vis: "visible", page6Vis: "hidden" });
     }
-        if (this.circleState == 7) {
+    if (this.circleState == 7) {
       this.setState({ page8Vis: "visible", page7Vis: "hidden" });
     }
   }
@@ -657,25 +663,24 @@ class Application extends React.Component {
       });
     }
     if (this.circleState == 2) {
-      this.setState({ page3Vis: "visible", page4Vis: "hidden"});
+      this.setState({ page3Vis: "visible", page4Vis: "hidden" });
     }
     if (this.circleState == 3) {
-      this.setState({ page4Vis: "visible", page5Vis: "hidden"});
+      this.setState({ page4Vis: "visible", page5Vis: "hidden" });
     }
     if (this.circleState == 4) {
-      this.setState({ page5Vis: "visible", page6Vis: "hidden"});
+      this.setState({ page5Vis: "visible", page6Vis: "hidden" });
     }
     if (this.circleState == 5) {
-      this.setState({ page6Vis: "visible", page7Vis: "hidden"});
+      this.setState({ page6Vis: "visible", page7Vis: "hidden" });
     }
-        if (this.circleState == 6) {
-      this.setState({ page7Vis: "visible", page8Vis: "hidden"});
+    if (this.circleState == 6) {
+      this.setState({ page7Vis: "visible", page8Vis: "hidden" });
     }
     if (this.circleState == 7) {
       this.setState({
         page8Vis: "visible",
-        page1Vis: "hidden",
-        page1Play: false
+        page1Vis: "hidden"
       });
     }
   }
@@ -698,8 +703,7 @@ class Application extends React.Component {
         page5Vis: "hidden",
         page6Vis: "hidden",
         page7Vis: "hidden",
-        page8Vis: "hidden",
-        page1Play: false
+        page8Vis: "hidden"
       });
     } else {
       if (this.circleState == 0) {
@@ -773,18 +777,16 @@ class Application extends React.Component {
     if (searchParams.get("query") == "research") {
       this.setState({
         researchState: false,
-        researchWidth: 0.405*this.state.mapWidth
+        researchWidth: 0.405 * this.state.mapWidth
       });
     }
   }
-
-
 
   render() {
     return (
       /*Main Div*/
       <div>
-      {/*Background*/}
+        {/*Background*/}
         {/*Page 1*/}
         {/*Page 1 Video*/}
         <ReactPlayer
@@ -792,7 +794,6 @@ class Application extends React.Component {
             position: "fixed",
             top: 0,
             left: -0.1 * this.state.mapWidth,
-            visibility: this.state.page1Vis,
             zIndex: 0
           }}
           url={this.theme0Video}
@@ -828,7 +829,6 @@ class Application extends React.Component {
             position: "fixed",
             top: 13,
             right: 170,
-            visibility: this.state.page1Vis,
             zIndex: 10
           }}
         >
@@ -854,39 +854,49 @@ class Application extends React.Component {
             position: "fixed",
             pointerEvents: "none",
             left: 0,
-            top:0,
+            top: 0,
             height: this.state.mapHeight,
             width: this.state.mapWidth,
             visibility: this.state.page3Vis
           }}
         >
-          {/*Theme 1 Description*/}
+          {/*Theme 1 Video*/}
           <div
             style={{
-              display: "inline-block",
               position: "absolute",
-              top: this.state.mapHeight/5,
-              zIndex: 5,
-              width: 0.3*this.state.mapWidth,
-              left: 0.65*this.state.mapWidth,
-              transition: "width 1s, bottom 1s, left 1s"
+              left: 0,
+              width: "50%",
+              height: window.innerHeight,
+              backgroundColor: "white",
+              zIndex: 100
             }}
           >
-            <text className="themeDesc">{this.theme1Desc}</text>
+            <ReactPlayer
+              className="video"
+              ref={el => (this.video1Ref = el)}
+              style={{
+                top: "10%",
+                left: "2%",
+                zIndex: this.state.videoZindex1
+              }}
+              url={this.theme1Video}
+              width = "46%"
+              height = "60%"
+              controls={true}
+            />
+            {/*Theme 1 Description*/}
+            <div
+              style={{
+                position: "absolute",
+                width: "90%",
+                left: "5%",
+                bottom: "20%",
+                zIndex: 5
+              }}
+            >
+              <text className="themeDesc2">{this.theme1Desc}</text>
+            </div>
           </div>
-          {/*Theme 1 Video*/}
-          <ReactPlayer
-            className="video"
-            ref={el => (this.video1Ref = el)}
-            style={{
-              display: "inline-block",
-              top: this.state.mapHeight/5,
-              left: 35,
-              zIndex: this.state.videoZindex1
-            }}
-            url={this.theme1Video}
-            controls={true}
-          />
         </div>
 
         {/*Page 4: Theme 3*/}
@@ -906,10 +916,10 @@ class Application extends React.Component {
             style={{
               position: "absolute",
               display: "inline-block",
-              top: this.state.mapHeight/5,
+              top: this.state.mapHeight / 5,
               zIndex: 5,
-              width: 0.3*this.state.mapWidth,
-              left: 0.65*this.state.mapWidth,
+              width: 0.3 * this.state.mapWidth,
+              left: 0.65 * this.state.mapWidth,
               transition: "width 1s, top 1s, left 1s"
             }}
           >
@@ -932,7 +942,7 @@ class Application extends React.Component {
             ref={el => (this.video1Ref = el)}
             style={{
               display: "inline-block",
-              top: this.state.mapHeight/5,
+              top: this.state.mapHeight / 5,
               left: 65,
               zIndex: this.state.videoZindex1,
               transition: "top 1s"
@@ -959,10 +969,10 @@ class Application extends React.Component {
             style={{
               position: "absolute",
               display: "inline-block",
-              top: this.state.mapHeight/5,
+              top: this.state.mapHeight / 5,
               zIndex: 5,
-              width: 0.3*this.state.mapWidth,
-              left: 0.65*this.state.mapWidth,
+              width: 0.3 * this.state.mapWidth,
+              left: 0.65 * this.state.mapWidth,
               transition: "width 1s, bottom 1s"
             }}
           >
@@ -973,7 +983,7 @@ class Application extends React.Component {
             className="video"
             style={{
               display: "inline-block",
-              top: this.state.mapHeight/5,
+              top: this.state.mapHeight / 5,
               left: -35,
               zIndex: this.state.videoZindex4
             }}
@@ -998,10 +1008,10 @@ class Application extends React.Component {
             style={{
               position: "absolute",
               display: "inline-block",
-              top: this.state.mapHeight/5,
+              top: this.state.mapHeight / 5,
               zIndex: 5,
-              width: 0.3*this.state.mapWidth,
-              left: 0.65*this.state.mapWidth,
+              width: 0.3 * this.state.mapWidth,
+              left: 0.65 * this.state.mapWidth,
               transition: "width 1s, bottom 1s"
             }}
           >
@@ -1012,7 +1022,7 @@ class Application extends React.Component {
             className="video"
             style={{
               display: "inline-block",
-              top: this.state.mapHeight/5,
+              top: this.state.mapHeight / 5,
               left: 70,
               zIndex: this.state.videoZindex4
             }}
@@ -1037,10 +1047,10 @@ class Application extends React.Component {
             style={{
               position: "absolute",
               display: "inline-block",
-              top: this.state.mapHeight/5,
+              top: this.state.mapHeight / 5,
               zIndex: 5,
-              width: 0.3*this.state.mapWidth,
-              left: 0.65*this.state.mapWidth,
+              width: 0.3 * this.state.mapWidth,
+              left: 0.65 * this.state.mapWidth,
               transition: "width 1s, bottom 1s"
             }}
           >
@@ -1051,7 +1061,7 @@ class Application extends React.Component {
             className="video"
             style={{
               display: "inline-block",
-              top: this.state.mapHeight/5,
+              top: this.state.mapHeight / 5,
               left: 35,
               zIndex: this.state.videoZindex4
             }}
@@ -1076,10 +1086,10 @@ class Application extends React.Component {
             style={{
               position: "absolute",
               display: "inline-block",
-              top: this.state.mapHeight/5,
+              top: this.state.mapHeight / 5,
               zIndex: 5,
-              width: 0.3*this.state.mapWidth,
-              left: 0.65*this.state.mapWidth,
+              width: 0.3 * this.state.mapWidth,
+              left: 0.65 * this.state.mapWidth,
               transition: "width 1s, bottom 1s"
             }}
           >
@@ -1090,17 +1100,19 @@ class Application extends React.Component {
             className="video"
             style={{
               display: "inline-block",
-              top: this.state.mapHeight/5,
+              top: this.state.mapHeight / 5,
               left: 70,
               zIndex: this.state.videoZindex4
             }}
-
             url={this.theme7Video}
             controls={true}
           />
         </div>
         {/*Title Bar*/}
-        <div className="titlebar" style={{ top: -10, width: 600, height: 50, zIndex: 10 }}>
+        <div
+          className="titlebar"
+          style={{ top: -10, width: 600, height: 50, zIndex: 10 }}
+        >
           <Typekit kitId="bor7jxc" />
           {/*Home Button*/}
           <span
